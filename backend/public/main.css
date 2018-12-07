@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+}
+
+.mapContainer {
+    height: 60vh;
+}
+
+#map {
+  height: 100%;
+}
+
+.header {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: lightblue;
+    border-radius: 15px;
+}
+
+#map {
+    position: fixed;
+}

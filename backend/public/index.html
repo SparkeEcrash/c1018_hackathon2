@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hackathon 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase.js"></script>
+    <script src="FB.js"></script>
+    <script src="geoHash.js"></script>
+    <script src="Maps.js"></script>
+    <script src="Spotify.js"></script>
+    <script src="Tickets.js"></script>
+    <script src="Document.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="title">
+                <h1 class="center-align">Spotty Concerts</h1>
+            </div>
+            <h5 class="instructions center-align">
+                Type in your Spotify username below to find relevant concerts!
+            </h5>
+            <div class="row">
+                <div class="col s4"></div>
+                <div class="col s2">
+                    <input type="text" class="usernameInput" placeholder="username here">
+                </div>
+                <div class="col s6">
+                    <button class="waves-effect waves-light btn submitBtn submit">Submit</button>
+                </div>
+                <div class="loginContainer">
+                        <button class="login">Login</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s6">
+                <h4>Concerts</h4>
+                <div class="row concertCards">
+                </div>
+            </div>
+            <div class="col s6">
+                <div class="mapContainer">
+                    <h4>Map</h4>
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
